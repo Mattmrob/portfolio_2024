@@ -6,11 +6,9 @@ function App() {
   return (
     <>
     <div classname="entire">
-      <Header />
     <main>
       <Outlet />
     </main>
-      <Footer />
     </div>
     </>
   );
