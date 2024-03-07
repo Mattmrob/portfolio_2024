@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.0.0",
-  "description": "React-Built Web Portfolio by Matthew Roberts",
+  "description": "Matthew Michael Roberts' Web Portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
