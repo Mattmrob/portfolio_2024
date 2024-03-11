@@ -53,6 +53,12 @@
 
 /* CSS */
 
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
 .landingContainer {
     display: flex;
     align-items: center;
