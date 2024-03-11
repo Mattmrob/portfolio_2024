@@ -1,0 +1,18 @@
+.landingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainBackground {
+    width: 100vw;
+    height: auto;
+    z-index: 0;
+}
+
+.logo {
+    position: absolute;
+    z-index: 1;
+    width: 20vw;
+    height: auto;
+}

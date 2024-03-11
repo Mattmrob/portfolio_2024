@@ -1,8 +1,10 @@
 export default function Home() {
     return (
       <div>
-      <h1>This is the Home Page</h1>
-      <img src="assets/imgs/background.jpg"></img>
+        <div className="landingContainer">
+          <img className="mainBackground" src="assets/imgs/background.jpg"></img>
+          <img className="logo" src="assets/imgs/mmrobertslogo.svg"></img>
+        </div>
       </div>
     );
   }
