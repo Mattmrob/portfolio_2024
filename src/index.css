@@ -1,7 +1,21 @@
 /* ANIMATIONS */
 
 @keyframes logo {
-    
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    25% {opacity: .7;}
+    30% {opacity: 1;}
+    35% {opacity: 1;}
+    40% {opacity: 1;}
+    45% {opacity: .7;}
+    50% {opacity: 1;}
+    55% {opacity: 1;}
+    60% {opacity: 1;}
+    65% {opacity: .7;}
+    70% {opacity: 1;}
+    75% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
 }
 
 @keyframes doors {
@@ -10,14 +24,31 @@
     100% {width: 0vw;}
 }
 
+@keyframes ring {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
 @keyframes spinner1 {
-    0% {}
-    100% {rotate: 365deg;}
+    0% {opacity: 1;}
+    20% {rotate: 365deg;}
+    40% {rotate: 730deg;}
+    60% {rotate: 1095deg;}
+    80% {rotate: 1460deg;}
+    99% {opacity: 1;}
+    100% {opacity: 0;}
 }
 
 @keyframes spinner2 {
-    0% {}
-    100% {rotate: 355deg;}
+    0% {opacity: 1;}
+    20% {rotate: 355deg;}
+    40% {rotate: 710deg;}
+    60% {rotate: 1065deg;}
+    80% {rotate: 1420deg;}
+    99% {opacity: 1;}
+    100% {opacity: 0;}
 }
 
 /* CSS */
@@ -42,6 +73,9 @@
     z-index: 5;
     width: 15vw;
     height: auto;
+    animation-name: logo;
+    animation-duration: 12s;
+    animation-fill-mode: both;
 }
 
 .spinnerRing {
@@ -51,6 +85,9 @@
     border: 8px solid black;
     border-radius: 100%;
     z-index: 2;
+    animation-name: ring;
+    animation-duration: 12s;
+    animation-fill-mode: both;
 }
 
 .spinner1{
@@ -61,8 +98,8 @@
     rotate: 5deg;
     z-index: 3;
     animation-name: spinner1;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    animation-fill-mode: both;
     /* animation-iteration-count: 3; */
 }
 
@@ -74,8 +111,8 @@
     rotate: -5deg;
     z-index: 3;
     animation-name: spinner2;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    animation-fill-mode: both;
     /* animation-iteration-count: 3; */
 }
 
@@ -86,10 +123,10 @@
     width: 50vw;
     height: 100%;
     z-index: 1;
-    /* animation-name: doors;
-    animation-duration: 5s;
-    animation-delay: 5s;
-    animation-fill-mode: both; */
+    animation-name: doors;
+    animation-duration: 4s;
+    animation-delay: 12s;
+    animation-fill-mode: both;
 }
 
 .door2 {
@@ -99,8 +136,8 @@
     width: 50vw;
     height: 100%;
     z-index: 1;
-    /* animation-name: doors;
-    animation-duration: 5s;
-    animation-delay: 5s;
-    animation-fill-mode: both; */
+    animation-name: doors;
+    animation-duration: 4s;
+    animation-delay: 12s;
+    animation-fill-mode: both;
 }
