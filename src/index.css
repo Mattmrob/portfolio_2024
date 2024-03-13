@@ -51,12 +51,16 @@
     100% {opacity: 0;}
 }
 
+@keyframes spinnerCover {
+    0% {}
+    100%{width:0vw; height:0vw; opacity: 0}
+}
+
 /* CSS */
 
 .mainContainer {
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
 }
 
 .landingContainer {
@@ -66,6 +70,8 @@
     width: 100vw;
     height: auto;
     background-color: aqua;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .mainBackground {
@@ -90,7 +96,7 @@
     height: 25vw;
     border: 8px solid black;
     border-radius: 100%;
-    z-index: 2;
+    z-index: 3;
     animation-name: ring;
     animation-duration: 12s;
     animation-fill-mode: both;
@@ -102,11 +108,10 @@
     height: 1.5vw;
     background-color: white;
     rotate: 5deg;
-    z-index: 3;
+    z-index: 4;
     animation-name: spinner1;
     animation-duration: 12s;
     animation-fill-mode: both;
-    /* animation-iteration-count: 3; */
 }
 
 .spinner2{
@@ -115,17 +120,17 @@
     height: 1.5vw;
     background-color: white;
     rotate: -5deg;
-    z-index: 3;
+    z-index: 4;
     animation-name: spinner2;
     animation-duration: 12s;
     animation-fill-mode: both;
-    /* animation-iteration-count: 3; */
 }
 
 .door1 {
     position: absolute;
     left: 0px;
-    background-color: rgb(255, 255, 255);
+    top: 0px;
+    background-color: black;
     width: 50vw;
     height: 100%;
     z-index: 1;
@@ -138,11 +143,25 @@
 .door2 {
     position: absolute;
     right: 0px;
-    background-color: rgb(255, 255, 255);
+    top: 0px;
+    background-color: black;
     width: 50vw;
     height: 100%;
     z-index: 1;
     animation-name: doors;
+    animation-duration: 4s;
+    animation-delay: 12s;
+    animation-fill-mode: both;
+}
+
+.spinnerCover {
+    position: absolute;
+    width: 32vw;
+    height: 32vw;
+    border-radius: 100%;
+    z-index: 2;
+    background-color: white;
+    animation-name: spinnerCover;
     animation-duration: 4s;
     animation-delay: 12s;
     animation-fill-mode: both;

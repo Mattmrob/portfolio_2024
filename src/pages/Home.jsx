@@ -7,6 +7,7 @@ export default function Home() {
           <div className="spinnerRing"></div>
           <div className="spinner1"></div>
           <div className="spinner2"></div>
+          <div className="spinnerCover"></div>
           <div className="door1"></div>
           <div className="door2"></div>
         </div>

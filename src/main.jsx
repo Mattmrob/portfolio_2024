@@ -6,8 +6,6 @@ import './index.css';
 
 import App from './App';
 import Home from './pages/Home';
-import PortfolioPage from './pages/Portfolio';
-import ResumePage from './pages/Resume';
 
 
 const router = createBrowserRouter([
