@@ -86,7 +86,7 @@
     width: 15vw;
     height: auto;
     animation-name: logo;
-    animation-duration: 12s;
+    animation-duration: 10s;
     animation-fill-mode: both;
 }
 
@@ -98,7 +98,7 @@
     border-radius: 100%;
     z-index: 3;
     animation-name: ring;
-    animation-duration: 12s;
+    animation-duration: 10s;
     animation-fill-mode: both;
 }
 
@@ -110,7 +110,7 @@
     rotate: 5deg;
     z-index: 4;
     animation-name: spinner1;
-    animation-duration: 12s;
+    animation-duration: 10s;
     animation-fill-mode: both;
 }
 
@@ -122,7 +122,7 @@
     rotate: -5deg;
     z-index: 4;
     animation-name: spinner2;
-    animation-duration: 12s;
+    animation-duration: 10s;
     animation-fill-mode: both;
 }
 
@@ -136,7 +136,7 @@
     z-index: 1;
     animation-name: doors;
     animation-duration: 4s;
-    animation-delay: 12s;
+    animation-delay: 10s;
     animation-fill-mode: both;
 }
 
@@ -150,7 +150,7 @@
     z-index: 1;
     animation-name: doors;
     animation-duration: 4s;
-    animation-delay: 12s;
+    animation-delay: 10s;
     animation-fill-mode: both;
 }
 
@@ -163,6 +163,14 @@
     background-color: white;
     animation-name: spinnerCover;
     animation-duration: 4s;
-    animation-delay: 12s;
+    animation-delay: 10s;
     animation-fill-mode: both;
+}
+
+.test {
+    position: absolute;
+    right: 10%;
+    font-size: 5vw;
+    color: white;
+    pointer-events: none;
 }

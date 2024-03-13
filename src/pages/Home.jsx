@@ -10,6 +10,7 @@ export default function Home() {
           <div className="spinnerCover"></div>
           <div className="door1"></div>
           <div className="door2"></div>
+          <h1 className="test">test again</h1>
         </div>
         <h1> test </h1>
       </div>
