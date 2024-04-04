@@ -14,8 +14,8 @@ export default function Home() {
           <img className="introLizard" src="assets/imgs/lizard_intro.svg"></img>
           <img className="introAllikine" src="assets/imgs/allikine_intro.svg"></img>
           <img className="heroesText" src="assets/imgs/heroes.svg"></img>
-          <img className="andText" src="assets/imgs/heroes.svg"></img>
-          <img className="villainsText" src="assets/imgs/heroes.svg"></img>
+          <img className="andText" src="assets/imgs/and.svg"></img>
+          <img className="villainsText" src="assets/imgs/villains.svg"></img>
         </div>
         <h1> test </h1>
       </div>

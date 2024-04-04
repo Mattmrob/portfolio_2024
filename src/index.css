@@ -71,12 +71,27 @@
 
 @keyframes lizard1 {
     0% {bottom: -50vw;}
-    100% {bottom: -15vw;}
+    100% {bottom: -18vw;}
 }
 
 @keyframes allikine1 {
     0% {top: 50vw;}
     100% {top: 0vw;}
+}
+
+@keyframes heroes {
+ 0% {left: -50vw}
+ 100% {left: 1vw;}
+}
+
+@keyframes and {
+ 0% {top: -50vw;}
+ 100% {top: 17vw;}
+}
+
+@keyframes villains {
+ 0% {right: -70vw;}
+ 100% {right: -1vw;}
 }
 
 /* CSS */
@@ -210,17 +225,19 @@
     animation-duration: 3s;
     animation-delay: 12s;
     animation-fill-mode: both;
+    z-index: 1;
 }
 
 .introLizard {
     position: absolute;
     width: 40vw;
     left: -10vw;
-    bottom: -15vw;
+    bottom: -18vw;
     animation-name: lizard1;
     animation-duration: 3s;
     animation-delay: 13s;
     animation-fill-mode: both;
+    z-index: 1;
 }
 
 .introAllikine {
@@ -230,20 +247,41 @@
     top: 0vw;
     animation-name: allikine1;
     animation-duration: 3s;
-    animation-delay: 15s;
+    animation-delay: 16s;
     animation-fill-mode: both;
 }
 
 .heroesText {
     position: absolute;
+    width: 42vw;
+    top: -2vw;
+    left: 1vw;
+    animation-name: heroes;
+    animation-duration: 2s;
+    animation-delay: 14s;
+    animation-fill-mode: both;
 }
 
 .andText {
     position: absolute;
+    width: 12vw;
+    top: 17vw;
+    left: 50vw;
+    animation-name: and;
+    animation-duration: 2s;
+    animation-delay: 15s;
+    animation-fill-mode: both;
 }
 
 .villainsText {
     position: absolute;
+    width: 60vw;
+    right: -1vw;
+    bottom: 2vw;
+    animation-name: villains;
+    animation-duration: 2s;
+    animation-delay: 17s;
+    animation-fill-mode: both;
 }
 
 .test {
