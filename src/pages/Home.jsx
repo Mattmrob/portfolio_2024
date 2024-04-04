@@ -17,7 +17,11 @@ export default function Home() {
           <img className="andText" src="assets/imgs/and.svg"></img>
           <img className="villainsText" src="assets/imgs/villains.svg"></img>
         </div>
-        <h1> test </h1>
+
+        <div className="boardContainer">
+          <h1>Bounty Board Here</h1>
+        </div>
+
       </div>
     );
   }
