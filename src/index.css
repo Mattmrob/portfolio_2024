@@ -18,10 +18,16 @@
     100% {opacity: 0;}
 }
 
-@keyframes doors {
+@keyframes door1 {
     0% {}
     50% {}
-    100% {width: 0vw;}
+    100% {left: -50vw;}
+}
+
+@keyframes door2 {
+    0% {}
+    50% {}
+    100% {right: -50vw;}
 }
 
 @keyframes ring {
@@ -59,19 +65,26 @@
 /* CSS */
 
 .mainContainer {
+    position: absolute;
     width: 100vw;
     height: 100vh;
+    background-color: beige;
+    overflow-x: hidden;
 }
 
 .landingContainer {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: auto;
     background-color: aqua;
+    padding: 0px;
+    margin: 0px;
     overflow-y: hidden;
     overflow-x: hidden;
+    z-index: 10;
 }
 
 .mainBackground {
@@ -130,11 +143,13 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    background-color: black;
     width: 50vw;
     height: 100%;
     z-index: 1;
-    animation-name: doors;
+    background-image: url(../src/assets/imgs/door1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: door1;
     animation-duration: 4s;
     animation-delay: 10s;
     animation-fill-mode: both;
@@ -144,11 +159,13 @@
     position: absolute;
     right: 0px;
     top: 0px;
-    background-color: black;
     width: 50vw;
     height: 100%;
     z-index: 1;
-    animation-name: doors;
+    background-image: url(../src/assets/imgs/door2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: door2;
     animation-duration: 4s;
     animation-delay: 10s;
     animation-fill-mode: both;
@@ -173,4 +190,5 @@
     font-size: 5vw;
     color: white;
     pointer-events: none;
+    display: none;
 }
